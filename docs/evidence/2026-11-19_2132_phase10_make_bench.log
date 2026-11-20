@@ -1,0 +1,3 @@
+./build/dispatchcore.exe --benchmark
+make: ./build/dispatchcore.exe: Permission denied
+make: *** [Makefile:186: bench] Error 127
