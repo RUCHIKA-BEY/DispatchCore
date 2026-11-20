@@ -1,0 +1,6 @@
+sh tests/e2e/run_e2e.sh ./build/dispatchcore.exe
+===== e2e bad_input =====
+===== e2e day1 =====
+===== e2e start-up failures =====
+
+37 e2e checks passed, 0 failed, 0 runs NOT RUN (blocked)

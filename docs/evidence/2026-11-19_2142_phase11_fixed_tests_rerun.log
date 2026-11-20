@@ -1,0 +1,2 @@
+/usr/bin/bash: line 1: ./build/test_report.exe: Permission denied
+/usr/bin/bash: line 1: ./build/test_menu.exe: Permission denied

@@ -1,0 +1,131 @@
+DispatchCore - emergency dispatch simulation (academic project;
+not for real emergency use).
+
+Loading data from tests/e2e/data ...
+  locations    10 loaded, 0 skipped
+  roads        11 loaded, 0 skipped
+  resources    file not found
+  incidents    file not found
+  allocations  file not found
+Ready: 10 locations, 0 units, 0 incidents, 0 allocations. Autosave is OFF.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 
+  Please type a number.
+Choice (0-23): abc
+  "abc" is not a whole number.
+Choice (0-23): 12abc
+  "12abc" is not a whole number.
+Choice (0-23): 99
+  Please type a number from 0 to 23.
+Choice (0-23): -1
+  Please type a number from 0 to 23.
+Choice (0-23):    
+  Please type a number.
+Choice (0-23): 4
+Incident ID (1-100000000): 0
+  Please type a number from 1 to 100000000.
+Incident ID (1-100000000): 5
+No incident with ID 5.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 9
+Unit ID (1-100000000): 77
+No unit with ID 77.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 0
+Goodbye.

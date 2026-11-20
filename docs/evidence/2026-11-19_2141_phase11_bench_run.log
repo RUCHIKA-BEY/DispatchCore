@@ -1,0 +1,11 @@
+./build/dispatchcore.exe --benchmark
+TIMING (clock(); depends on this machine and its load — compare rows,
+not absolute values; repeat the run to see the variation)
+Dijkstra, 50 sources per grid city:
+   100 locations   180 roads   heap       0.0 ms   array       2.0 ms   same distances: yes
+   400 locations   760 roads   heap       4.0 ms   array      15.0 ms   same distances: yes
+   961 locations  1860 roads   heap       9.0 ms   array      67.0 ms   same distances: yes
+ID lookup (hash index vs linear scan of the store):
+   1000 units   100000 lookups   hash      1.0 ms   linear     46.0 ms   found 100000 / 100000
+   2000 units   100000 lookups   hash      1.0 ms   linear    108.0 ms   found 100000 / 100000
+   4000 units   100000 lookups   hash      5.0 ms   linear    208.0 ms   found 100000 / 100000

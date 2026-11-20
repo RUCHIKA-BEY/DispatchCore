@@ -1,0 +1,843 @@
+DispatchCore - emergency dispatch simulation (academic project;
+not for real emergency use).
+
+Loading data from tests/e2e/data ...
+  locations    10 loaded, 0 skipped
+  roads        11 loaded, 0 skipped
+  resources    file not found
+  incidents    file not found
+  allocations  file not found
+Ready: 10 locations, 0 units, 0 incidents, 0 allocations. Autosave is OFF.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 6
+  1 AMBULANCE
+  2 FIRE_UNIT
+  3 RESCUE_UNIT
+Unit type (1-3): 1
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+Base location (0-9): 0
+Registered unit 1: AMBULANCE at 0 Central Hospital. Status AVAILABLE.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 6
+  1 AMBULANCE
+  2 FIRE_UNIT
+  3 RESCUE_UNIT
+Unit type (1-3): 2
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+Base location (0-9): 2
+Registered unit 2: FIRE_UNIT at 2 Fire Station North. Status AVAILABLE.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 1
+  1 MEDICAL            needs: AMBULANCE
+  2 ROAD_ACCIDENT      needs: AMBULANCE or RESCUE_UNIT
+  3 FIRE               needs: FIRE_UNIT
+  4 STRUCTURAL_RESCUE  needs: RESCUE_UNIT
+Incident type (1-4): 1
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+Location (0-9): 5
+  1 Minor 2 Moderate 3 Serious 4 Severe 5 Critical
+Severity (1-5): 4
+Registered incident 1001: MEDICAL, severity 4 (Severe), at 5 Old Town. Status PENDING.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 1
+  1 MEDICAL            needs: AMBULANCE
+  2 ROAD_ACCIDENT      needs: AMBULANCE or RESCUE_UNIT
+  3 FIRE               needs: FIRE_UNIT
+  4 STRUCTURAL_RESCUE  needs: RESCUE_UNIT
+Incident type (1-4): 3
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+Location (0-9): 4
+  1 Minor 2 Moderate 3 Serious 4 Severe 5 Critical
+Severity (1-5): 5
+Registered incident 1002: FIRE, severity 5 (Critical), at 4 Industrial Zone. Status PENDING.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 2
+Pending incidents, highest priority first:
+ID     TYPE               LOCATION                   SEVERITY        SEQ  STATUS     RESOURCE
+1002   FIRE               4                          5 Critical        3  PENDING    -
+1001   MEDICAL            5                          4 Severe          2  PENDING    -
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 11
+Dispatched unit 2 (FIRE_UNIT) to incident 1002 (FIRE, severity 5 Critical) at 4 Industrial Zone
+  distance 5, route: 2 Fire Station North > 4 Industrial Zone
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 11
+Dispatched unit 1 (AMBULANCE) to incident 1001 (MEDICAL, severity 4 Severe) at 5 Old Town
+  distance 9, route: 0 Central Hospital > 3 Riverside > 5 Old Town
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 11
+No pending incidents.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 14
+Incident ID to complete (1-100000000): 1002
+Incident 1002 completed. Unit 2 is available again at 4 Industrial Zone.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 5
+Incident ID to cancel (1-100000000): 1001
+Incident 1001 is DISPATCHED; only PENDING incidents can be cancelled.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 10
+Unit ID (1-100000000): 2
+Unit 2 is AVAILABLE.
+Take it out of service? (y/n): y
+Unit 2 is now OUT_OF_SERVICE.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 7
+ID    TYPE         LOCATION                   STATUS          INCIDENT   TRIPS   DISTANCE
+(no resources)
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 4
+Incident ID (1-100000000): 1001
+ID     TYPE               LOCATION                   SEVERITY        SEQ  STATUS     RESOURCE
+1001   MEDICAL            5 Old Town                 4 Severe          2  DISPATCHED 1
+#2 ACTIVE: incident 1001 MEDICAL (severity 4) at 5 Old Town
+    unit 1 AMBULANCE from 0 Central Hospital, distance 9, sent at 5, waited 3
+    route: 0 Central Hospital > 3 Riverside > 5 Old Town
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 15
+Road network: 10 locations, 11 roads
+  [ 0] Central Hospital    : -> 3 Riverside (7) -> 1 City Square (4)
+  [ 1] City Square         : -> 5 Old Town (6) -> 2 Fire Station North (3) -> 0 Central Hospital (4)
+  [ 2] Fire Station North  : -> 4 Industrial Zone (5) -> 1 City Square (3)
+  [ 3] Riverside           : -> 6 Airport Road (9) -> 5 Old Town (2) -> 0 Central Hospital (7)
+  [ 4] Industrial Zone     : -> 7 University (4) -> 2 Fire Station North (5)
+  [ 5] Old Town            : -> 7 University (8) -> 3 Riverside (2) -> 1 City Square (6)
+  [ 6] Airport Road        : -> 7 University (3) -> 3 Riverside (9)
+  [ 7] University          : -> 6 Airport Road (3) -> 5 Old Town (8) -> 4 Industrial Zone (4)
+  [ 8] Hill Village        : -> 9 Lake Camp (5)
+  [ 9] Lake Camp           : -> 8 Hill Village (5)
+The city has 2 separate groups of locations; no road joins them.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 16
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+From (0-9): 0
+To (0-9): 9
+No road connects 0 Central Hospital and 9 Lake Camp.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 16
+  Locations: 0 Central Hospital | 1 City Square | 2 Fire Station North | 3 Riverside | 4 Industrial Zone | 5 Old Town | 6 Airport Road | 7 University | 8 Hill Village | 9 Lake Camp
+From (0-9): 0
+To (0-9): 7
+Shortest distance 16. Route: 0 Central Hospital > 1 City Square > 2 Fire Station North > 4 Industrial Zone > 7 University
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 19
+SYSTEM STATISTICS (simulated clock = 7)
+Incidents: 2
+  by status: PENDING 0 DISPATCHED 1 COMPLETED 1 CANCELLED 0
+  by type:   MEDICAL 1 ROAD_ACCIDENT 0 FIRE 1 STRUCTURAL_RESCUE 0
+  failed dispatch attempts: 0
+Queue: 0 heap entries (0 live, 0 cancelled awaiting lazy removal)
+Units: 2
+  by status: AVAILABLE 0 DISPATCHED 1 OUT_OF_SERVICE 1
+  by type:   AMBULANCE 1 FIRE_UNIT 1 RESCUE_UNIT 0
+  dispatches by unit type: AMBULANCE 1 FIRE_UNIT 1 RESCUE_UNIT 0
+Allocations: 2 (active 1, completed 1)
+  distance: total 14, average 7.00, min 5, max 9
+  wait (reported -> dispatched): average 2.00 ticks over 2
+  service (dispatched -> completed): average 2.00 ticks over 1
+  average wait by severity:
+    5 Critical    1 dispatched, average wait 1.00
+    4 Severe      1 dispatched, average wait 3.00
+    3 Serious     0 dispatched, average wait -
+    2 Moderate    0 dispatched, average wait -
+    1 Minor       0 dispatched, average wait -
+Cross-check: all counters agree
+
+Unit utilisation (busiest first):
+RANK UNIT TYPE        STATUS         LOCATION                 DISPATCHES TOTAL DIST AVG DIST
+   1    1 AMBULANCE   DISPATCHED     0 Central Hospital                1          9     9.00
+   2    2 FIRE_UNIT   OUT_OF_SERVICE 4 Industrial Zone                 1          5     5.00
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): abc
+  "abc" is not a whole number.
+Choice (0-23): 99
+  Please type a number from 0 to 23.
+Choice (0-23): 17
+Road closures are an optional feature that has not been implemented.
+Roads are read from roads.csv at start-up and cannot be changed while running.
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 20
+STRATEGY COMPARISON (academic simulation; times in simulated steps)
+Units travel 5 distance units per step. Response = wait + travel time.
+CRIT_* = severity 5 only. WTD_RESP = severity-weighted average response.
+Every strategy runs on its own copy of the same scenario.
+
+=== current map, light load: 10 locations, 6 units, 60 incidents (seed 101, gaps 0-3 steps) ===
+STRATEGY                       SERVED UNSERV  DISTANCE AVG_WAIT AVG_RESP CRIT_RESP CRIT_MAX  WTD_RESP MAKESPAN VALID
+baseline (FIFO + first fit)        54      6       377     1.50     3.26      4.57        9      3.58       98   yes
+FIFO + nearest                     54      6       325     1.39     2.91      4.57        9      3.13       97   yes
+priority + first fit               54      6       372     1.96     3.67      3.57        9      3.23       98   yes
+optimised (priority + nearest)     54      6       326     1.93     3.44      2.86        9      2.96       97   yes
+Baseline -> optimised:
+  average response, critical (sev 5)           4.57 -> 2.86
+  severity-weighted average response           3.58 -> 2.96
+  average response, all incidents              3.26 -> 3.44
+  average distance per dispatch                6.98 -> 6.04
+
+=== current map, heavy load: 10 locations, 6 units, 150 incidents (seed 202, gaps 0-1 steps) ===
+STRATEGY                       SERVED UNSERV  DISTANCE AVG_WAIT AVG_RESP CRIT_RESP CRIT_MAX  WTD_RESP MAKESPAN VALID
+baseline (FIFO + first fit)       136     14      1012    43.33    45.19     40.52      134     42.40      233   yes
+FIFO + nearest                    136     14       984    41.95    43.76     38.76      129     40.98      228   yes
+priority + first fit              136     14       957    41.49    43.22      4.76       17     26.22      225   yes
+optimised (priority + nearest)    136     14       947    41.47    43.20      4.72       17     26.18      225   yes
+Baseline -> optimised:
+  average response, critical (sev 5)          40.52 -> 4.72
+  severity-weighted average response          42.40 -> 26.18
+  average response, all incidents             45.19 -> 43.20
+  average distance per dispatch                7.44 -> 6.96
+
+=== 10 x 10 grid, heavy load: 100 locations, 15 units, 400 incidents (seed 404, gaps 0-1 steps) ===
+STRATEGY                       SERVED UNSERV  DISTANCE AVG_WAIT AVG_RESP CRIT_RESP CRIT_MAX  WTD_RESP MAKESPAN VALID
+baseline (FIFO + first fit)       400      0     10034    30.43    35.84     36.23       87     36.77      275   yes
+FIFO + nearest                    400      0     10102    31.76    37.20     37.45       91     38.19      276   yes
+priority + first fit              400      0     10574    31.07    36.75      6.63       14     20.71      279   yes
+optimised (priority + nearest)    400      0      9460    26.12    31.25      6.26       13     17.72      264   yes
+Baseline -> optimised:
+  average response, critical (sev 5)          36.23 -> 6.26
+  severity-weighted average response          36.77 -> 17.72
+  average response, all incidents             35.84 -> 31.25
+  average distance per dispatch               25.09 -> 23.65
+
+================ DispatchCore ================
+ INCIDENTS
+   1. Register incident
+   2. View pending incidents (priority order)
+   3. View all incidents
+   4. Search incident by ID
+   5. Cancel pending incident
+ RESOURCES
+   6. Register unit
+   7. View available units
+   8. View all units
+   9. Search unit by ID
+  10. Take unit out of / back into service
+ DISPATCH
+  11. Dispatch next emergency
+  12. Dispatch all possible
+  13. View active dispatches
+  14. Complete incident
+ ROAD NETWORK
+  15. Display road network
+  16. Find shortest route
+  17. Close / reopen road              [not implemented]
+ REPORTS
+  18. Allocation history
+  19. System statistics
+  20. Compare dispatch strategies (simulation)
+  21. Hash table and heap debug view
+ SYSTEM
+  22. Save data now
+  23. Write full report to a text file
+   0. Exit (autosave is OFF)
+==============================================
+Choice (0-23): 0
+Autosave is off: unsaved changes are discarded.
+Goodbye.

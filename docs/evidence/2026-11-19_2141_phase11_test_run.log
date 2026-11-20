@@ -1,0 +1,360 @@
+===== build/test_graph.exe =====
+[test] graph_create rejects invalid sizes
+[test] graph_create builds an empty graph
+[test] vertex validation
+[test] location names
+[test] graph_add_road stores both directions
+[test] graph_add_road rejects invalid roads
+[test] reference city structure
+
+Road network: 10 locations, 11 roads
+  [ 0] Central Hospital    : -> 3 Riverside (7) -> 1 City Square (4)
+  [ 1] City Square         : -> 5 Old Town (6) -> 2 Fire Station North (3) -> 0 Central Hospital (4)
+  [ 2] Fire Station North  : -> 4 Industrial Zone (5) -> 1 City Square (3)
+  [ 3] Riverside           : -> 6 Airport Road (9) -> 5 Old Town (2) -> 0 Central Hospital (7)
+  [ 4] Industrial Zone     : -> 7 University (4) -> 2 Fire Station North (5)
+  [ 5] Old Town            : -> 7 University (8) -> 3 Riverside (2) -> 1 City Square (6)
+  [ 6] Airport Road        : -> 7 University (3) -> 3 Riverside (9)
+  [ 7] University          : -> 6 Airport Road (3) -> 5 Old Town (8) -> 4 Industrial Zone (4)
+  [ 8] Hill Village        : -> 9 Lake Camp (5)
+  [ 9] Lake Camp           : -> 8 Hill Village (5)
+
+[test] connected components
+[test] largest allowed graph (chain of DC_MAX_VERTICES)
+[test] graph_destroy(NULL) and graph_print(NULL) are safe
+(no road network loaded)
+
+95 checks, 0 failed -> ALL PASSED
+===== build/test_minheap.exe =====
+/bin/sh: line 4: ./build/test_minheap.exe: Permission denied
+===== build/test_dijkstra.exe =====
+/bin/sh: line 4: ./build/test_dijkstra.exe: Permission denied
+===== build/test_incident.exe =====
+[test] type/status names round-trip
+[test] incident_validate
+[test] incident_create
+[test] incident_higher_priority
+[test] status transition table
+[test] incident store: ownership, duplicates, growth
+
+ID     TYPE               LOCATION                   SEVERITY        SEQ  STATUS     RESOURCE
+1000   FIRE               2                          5 Critical        0  PENDING    -
+1001   ROAD_ACCIDENT      1                          2 Moderate        1  PENDING    -
+1002   FIRE               2                          3 Serious         2  PENDING    -
+1003   STRUCTURAL_RESCUE  3                          4 Severe          3  PENDING    -
+1004   MEDICAL            4                          5 Critical        4  PENDING    -
+1005   ROAD_ACCIDENT      5                          1 Minor           5  PENDING    -
+1006   FIRE               6                          2 Moderate        6  PENDING    -
+1007   STRUCTURAL_RESCUE  7                          3 Serious         7  PENDING    -
+1008   MEDICAL            8                          4 Severe          8  PENDING    -
+1009   ROAD_ACCIDENT      9                          5 Critical        9  PENDING    -
+1010   FIRE               0                          1 Minor          10  PENDING    -
+1011   STRUCTURAL_RESCUE  1                          2 Moderate       11  PENDING    -
+1012   MEDICAL            2                          3 Serious        12  PENDING    -
+1013   ROAD_ACCIDENT      3                          4 Severe         13  PENDING    -
+1014   FIRE               4                          5 Critical       14  PENDING    -
+1015   STRUCTURAL_RESCUE  5                          1 Minor          15  PENDING    -
+1016   MEDICAL            6                          2 Moderate       16  PENDING    -
+1017   ROAD_ACCIDENT      7                          3 Serious        17  PENDING    -
+1018   FIRE               8                          4 Severe         18  PENDING    -
+1019   STRUCTURAL_RESCUE  9                          5 Critical       19  PENDING    -
+1020   MEDICAL            0                          1 Minor          20  PENDING    -
+1021   ROAD_ACCIDENT      1                          2 Moderate       21  PENDING    -
+1022   FIRE               2                          3 Serious        22  PENDING    -
+1023   STRUCTURAL_RESCUE  3                          4 Severe         23  PENDING    -
+1024   MEDICAL            4                          5 Critical       24  PENDING    -
+1025   ROAD_ACCIDENT      5                          1 Minor          25  PENDING    -
+1026   FIRE               6                          2 Moderate       26  PENDING    -
+1027   STRUCTURAL_RESCUE  7                          3 Serious        27  PENDING    -
+1028   MEDICAL            8                          4 Severe         28  PENDING    -
+1029   ROAD_ACCIDENT      9                          5 Critical       29  PENDING    -
+1030   FIRE               0                          1 Minor          30  PENDING    -
+1031   STRUCTURAL_RESCUE  1                          2 Moderate       31  PENDING    -
+1032   MEDICAL            2                          3 Serious        32  PENDING    -
+1033   ROAD_ACCIDENT      3                          4 Severe         33  PENDING    -
+1034   FIRE               4                          5 Critical       34  PENDING    -
+1035   STRUCTURAL_RESCUE  5                          1 Minor          35  PENDING    -
+1036   MEDICAL            6                          2 Moderate       36  PENDING    -
+1037   ROAD_ACCIDENT      7                          3 Serious        37  PENDING    -
+1038   FIRE               8                          4 Severe         38  PENDING    -
+1039   STRUCTURAL_RESCUE  9                          5 Critical       39  PENDING    -
+1040   MEDICAL            0                          1 Minor          40  PENDING    -
+1041   ROAD_ACCIDENT      1                          2 Moderate       41  PENDING    -
+1042   FIRE               2                          3 Serious        42  PENDING    -
+1043   STRUCTURAL_RESCUE  3                          4 Severe         43  PENDING    -
+1044   MEDICAL            4                          5 Critical       44  PENDING    -
+1045   ROAD_ACCIDENT      5                          1 Minor          45  PENDING    -
+1046   FIRE               6                          2 Moderate       46  PENDING    -
+1047   STRUCTURAL_RESCUE  7                          3 Serious        47  PENDING    -
+1048   MEDICAL            8                          4 Severe         48  PENDING    -
+1049   ROAD_ACCIDENT      9                          5 Critical       49  PENDING    -
+
+
+89 checks, 0 failed -> ALL PASSED
+===== build/test_incident_heap.exe =====
+/bin/sh: line 4: ./build/test_incident_heap.exe: Permission denied
+===== build/test_resource.exe =====
+[test] type/status names round-trip
+[test] resource_validate / resource_create
+[test] status transition table
+[test] assign / release: no double assignment, statistics, relocation
+[test] out of service / return to service
+[test] 5000 random operations never break the invariant
+[test] resource store: order, duplicates, counts
+
+ID    TYPE         LOCATION                   STATUS          INCIDENT   TRIPS   DISTANCE
+7     AMBULANCE    0                          AVAILABLE       -              0          0
+2     FIRE_UNIT    1                          AVAILABLE       -              0          0
+9     RESCUE_UNIT  2                          DISPATCHED      1001           1          3
+4     AMBULANCE    3                          OUT_OF_SERVICE  -              0          0
+
+ID    TYPE         LOCATION                   STATUS          INCIDENT   TRIPS   DISTANCE
+7     AMBULANCE    0                          AVAILABLE       -              0          0
+2     FIRE_UNIT    1                          AVAILABLE       -              0          0
+
+
+98 checks, 0 failed -> ALL PASSED
+===== build/test_compatibility.exe =====
+[test] every cell of the compatibility matrix
+[test] options per incident type; table completeness
+
+INCIDENT \ UNIT     AMBULANCE    FIRE_UNIT    RESCUE_UNIT 
+MEDICAL             yes          -            -           
+ROAD_ACCIDENT       yes          -            yes         
+FIRE                -            yes          -           
+STRUCTURAL_RESCUE   -            -            yes         
+
+  ROAD_ACCIDENT can be served by: AMBULANCE or RESCUE_UNIT
+
+[test] eligibility = compatible AND available (reference fleet)
+
+22 checks, 0 failed -> ALL PASSED
+===== build/test_hash_table.exe =====
+/bin/sh: line 4: ./build/test_hash_table.exe: Permission denied
+===== build/test_app_state.exe =====
+/bin/sh: line 4: ./build/test_app_state.exe: Permission denied
+===== build/test_history.exe =====
+[test] allocation status names
+[test] append keeps order; tail pointer; find
+
+ALLOC INCIDENT RESOURCE STATUS     DISTANCE     SENT     DONE  ROUTE
+1     1001     1        ACTIVE            9        7        -  0 > 3 > 5
+2     1004     4        ACTIVE            0        8        -  4
+3     1007     2        ACTIVE            3        9        -  2 > 1
+
+[test] invalid appends are refused and the caller keeps the route
+[test] ACTIVE -> COMPLETED; counting by status
+[test] 5000 appends: O(1) tail append keeps order
+
+51 checks, 0 failed -> ALL PASSED
+===== build/test_dispatch.exe =====
+/bin/sh: line 4: ./build/test_dispatch.exe: Permission denied
+===== build/test_file_manager.exe =====
+[test] load tests/data/valid: every record, counter and status restored
+[test] save -> reload gives the same state (valid fixture + activity)
+[test] save -> reload after 600 random simulation steps
+  244 incidents, 10 resources, 28 allocations saved and reloaded
+[test] malformed rows are skipped with warnings; good rows still load
+
+  tests/data/malformed/locations.csv:8: duplicate location_id - row skipped
+  tests/data/malformed/locations.csv:9: bad location_id - row skipped
+  tests/data/malformed/locations.csv:12: expected 2 fields - row skipped
+  tests/data/malformed/roads.csv:6: duplicate road - row skipped
+  tests/data/malformed/roads.csv:10: invalid road (unknown location or self-loop) - row skipped
+  tests/data/malformed/roads.csv:12: invalid road (unknown location or self-loop) - row skipped
+  tests/data/malformed/roads.csv:14: bad distance - row skipped
+  tests/data/malformed/roads.csv:15: bad distance - row skipped
+  tests/data/malformed/roads.csv:17: expected 4 fields - row skipped
+  tests/data/malformed/roads.csv:18: road closures are not supported yet - row skipped
+  tests/data/malformed/resources.csv:3: bad value (number, type or status) - row skipped
+  tests/data/malformed/resources.csv:4: invalid resource (location or status/assignment) - row skipped
+  tests/data/malformed/resources.csv:5: duplicate resource_id - row skipped
+  tests/data/malformed/resources.csv:6: invalid resource (location or status/assignment) - row skipped
+  tests/data/malformed/resources.csv:7: expected 7 fields - row skipped
+  tests/data/malformed/resources.csv:8: bad value (number, type or status) - row skipped
+  tests/data/malformed/incidents.csv:3: invalid incident (severity, location or status/assignment) - row skipped
+  tests/data/malformed/incidents.csv:4: bad value (number, type or status) - row skipped
+  tests/data/malformed/incidents.csv:5: bad value (number, type or status) - row skipped
+  tests/data/malformed/incidents.csv:6: duplicate incident_id - row skipped
+  tests/data/malformed/incidents.csv:7: invalid incident (severity, location or status/assignment) - row skipped
+  tests/data/malformed/incidents.csv:8: bad value (number, type or status) - row skipped
+  tests/data/malformed/incidents.csv:9: bad value (number, type or status) - row skipped
+  tests/data/malformed/incidents.csv:11: expected 8 fields - row skipped
+  tests/data/malformed/incidents.csv:12: line too long - row skipped
+  tests/data/malformed/allocations.csv:2: route does not match the road network or the distance - row skipped
+  tests/data/malformed/allocations.csv:3: route does not match the road network or the distance - row skipped
+  tests/data/malformed/allocations.csv:4: bad route - row skipped
+  tests/data/malformed/allocations.csv:5: bad value (number, location or status) - row skipped
+  tests/data/malformed/allocations.csv:6: invalid allocation (times or status) - row skipped
+
+  locations    10 loaded, 3 skipped
+  roads        11 loaded, 7 skipped
+  resources    2 loaded, 6 skipped
+  incidents    2 loaded, 9 skipped
+  allocations  0 loaded, 5 skipped
+[test] Windows line endings + byte-order mark; missing optional files
+[test] loads that must be refused (and leave a safe, empty state)
+
+  tests/data/bad_header/incidents.csv:1: unexpected header line (wrong file or wrong format)
+    expected: incident_id,type,location_id,severity,reported_seq,status,assigned_resource_id,dispatch_attempts
+  consistency: dispatched incident has no active allocation (id 1001)
+  The saved records contradict each other (1 problem(s)); refusing to load rather than guess. Files were not changed.
+  tests/data/gap/locations.csv: location 2 is missing (IDs must be 0..3 with no gaps)
+  tests/data/no_such_folder/locations.csv: not found - a road network is required to start
+[test] safe save: .bak keeps the previous version, no .tmp left behind
+
+81 checks, 0 failed -> ALL PASSED
+===== build/test_report.exe =====
+[test] reports on an empty state (no records)
+
+SYSTEM STATISTICS (simulated clock = 0)
+Incidents: 0
+  by status: PENDING 0 DISPATCHED 0 COMPLETED 0 CANCELLED 0
+  by type:   MEDICAL 0 ROAD_ACCIDENT 0 FIRE 0 STRUCTURAL_RESCUE 0
+  failed dispatch attempts: 0
+Queue: 0 heap entries (0 live, 0 cancelled awaiting lazy removal)
+Units: 0
+  by status: AVAILABLE 0 DISPATCHED 0 OUT_OF_SERVICE 0
+  by type:   AMBULANCE 0 FIRE_UNIT 0 RESCUE_UNIT 0
+  dispatches by unit type: AMBULANCE 0 FIRE_UNIT 0 RESCUE_UNIT 0
+Allocations: 0 (active 0, completed 0)
+  distance: total 0, average -, min -, max -
+  wait (reported -> dispatched): average - ticks over 0
+  service (dispatched -> completed): average - ticks over 0
+  average wait by severity:
+    5 Critical    0 dispatched, average wait -
+    4 Severe      0 dispatched, average wait -
+    3 Serious     0 dispatched, average wait -
+    2 Moderate    0 dispatched, average wait -
+    1 Minor       0 dispatched, average wait -
+(no matching allocations)
+INCIDENT TYPE              SEV  LOCATION                 UNIT UNIT TYPE    DIST  WAIT SERVICE
+(no completed incidents)
+(no units registered)
+[test] NULL arguments are rejected, never crash
+[test] report_average
+[test] statistics of the hand-traced scenario (PHASE8 doc §E)
+  CROSS-CHECK FAILED: unit dispatch counters vs allocations (7 vs 6)
+  CROSS-CHECK FAILED: live heap entries vs PENDING incidents (1 vs 0)
+  CROSS-CHECK FAILED: allocations naming an unknown incident (1 vs 0)
+
+==================== DispatchCore report ====================
+(academic simulation; times are simulated clock ticks)
+
+SYSTEM STATISTICS (simulated clock = 22)
+Incidents: 7
+  by status: PENDING 0 DISPATCHED 4 COMPLETED 2 CANCELLED 1
+  by type:   MEDICAL 2 ROAD_ACCIDENT 2 FIRE 2 STRUCTURAL_RESCUE 1
+  failed dispatch attempts: 4
+Queue: 1 heap entries (0 live, 1 cancelled awaiting lazy removal)
+Units: 6
+  by status: AVAILABLE 1 DISPATCHED 4 OUT_OF_SERVICE 1
+  by type:   AMBULANCE 3 FIRE_UNIT 2 RESCUE_UNIT 1
+  dispatches by unit type: AMBULANCE 3 FIRE_UNIT 2 RESCUE_UNIT 1
+Allocations: 6 (active 4, completed 2)
+  distance: total 21, average 3.50, min 0, max 15
+  wait (reported -> dispatched): average 6.83 ticks over 6
+  service (dispatched -> completed): average 4.00 ticks over 2
+  average wait by severity:
+    5 Critical    2 dispatched, average wait 5.00
+    4 Severe      2 dispatched, average wait 5.00
+    3 Serious     1 dispatched, average wait 15.00
+    2 Moderate    0 dispatched, average wait -
+    1 Minor       1 dispatched, average wait 6.00
+Cross-check: all counters agree
+
+---- Unit utilisation (busiest first) ----
+RANK UNIT TYPE        STATUS         LOCATION                 DISPATCHES TOTAL DIST AVG DIST
+   1    2 AMBULANCE   DISPATCHED     1 City Square                     2         21    10.50
+   2    1 AMBULANCE   DISPATCHED     0 Central Hospital                1          0     0.00
+   3    3 FIRE_UNIT   AVAILABLE      2 Fire Station North              1          0     0.00
+   4    4 RESCUE_UNIT DISPATCHED     4 Industrial Zone                 1          0     0.00
+   5    5 FIRE_UNIT   DISPATCHED     7 University                      1          0     0.00
+   6    6 AMBULANCE   OUT_OF_SERVICE 8 Hill Village                    0          0        -
+
+---- Completed incidents ----
+INCIDENT TYPE              SEV  LOCATION                 UNIT UNIT TYPE    DIST  WAIT SERVICE
+1002     FIRE                5  2 Fire Station North        3 FIRE_UNIT       0     6       5
+1007     ROAD_ACCIDENT       4  1 City Square               2 AMBULANCE      15     4       3
+
+---- Allocation history (oldest first) ----
+#1 COMPLETED: incident 1002 FIRE (severity 5) at 2 Fire Station North
+    unit 3 FIRE_UNIT from 2 Fire Station North, distance 0, sent at 13, done at 18, waited 6
+    route: 2 Fire Station North
+#2 ACTIVE: incident 1005 MEDICAL (severity 5) at 0 Central Hospital
+    unit 1 AMBULANCE from 0 Central Hospital, distance 0, sent at 14, waited 4
+    route: 0 Central Hospital
+#3 ACTIVE: incident 1004 STRUCTURAL_RESCUE (severity 4) at 4 Industrial Zone
+    unit 4 RESCUE_UNIT from 4 Industrial Zone, distance 0, sent at 15, waited 6
+    route: 4 Industrial Zone
+#4 COMPLETED: incident 1007 ROAD_ACCIDENT (severity 4) at 1 City Square
+    unit 2 AMBULANCE from 6 Airport Road, distance 15, sent at 16, done at 19, waited 4
+    route: 6 Airport Road > 7 University > 4 Industrial Zone > 2 Fire Station North > 1 City Square
+#5 ACTIVE: incident 1006 FIRE (severity 1) at 7 University
+    unit 5 FIRE_UNIT from 7 University, distance 0, sent at 17, waited 6
+    route: 7 University
+#6 ACTIVE: incident 1001 MEDICAL (severity 3) at 5 Old Town
+    unit 2 AMBULANCE from 1 City Square, distance 6, sent at 21, waited 15
+    route: 1 City Square > 5 Old Town
+==================== end of report ====================
+[test] allocation history filters
+
+-- history of unit 2 --
+#4 COMPLETED: incident 1007 ROAD_ACCIDENT (severity 4) at 1 City Square
+    unit 2 AMBULANCE from 6 Airport Road, distance 15, sent at 16, done at 19, waited 4
+    route: 6 Airport Road > 7 University > 4 Industrial Zone > 2 Fire Station North > 1 City Square
+#6 ACTIVE: incident 1001 MEDICAL (severity 3) at 5 Old Town
+    unit 2 AMBULANCE from 1 City Square, distance 6, sent at 21, waited 15
+    route: 1 City Square > 5 Old Town
+-- history of incident 1003 --
+(no matching allocations)
+[test] completed incidents report
+
+INCIDENT TYPE              SEV  LOCATION                 UNIT UNIT TYPE    DIST  WAIT SERVICE
+1002     FIRE                5  2 Fire Station North        3 FIRE_UNIT       0     6       5
+1007     ROAD_ACCIDENT       4  1 City Square               2 AMBULANCE      15     4       3
+[test] report_busier ordering rule
+[test] unit ranking (insertion sort)
+
+RANK UNIT TYPE        STATUS         LOCATION                 DISPATCHES TOTAL DIST AVG DIST
+   1    2 AMBULANCE   DISPATCHED     1 City Square                     2         21    10.50
+   2    1 AMBULANCE   DISPATCHED     0 Central Hospital                1          0     0.00
+   3    3 FIRE_UNIT   AVAILABLE      2 Fire Station North              1          0     0.00
+   4    4 RESCUE_UNIT DISPATCHED     4 Industrial Zone                 1          0     0.00
+   5    5 FIRE_UNIT   DISPATCHED     7 University                      1          0     0.00
+   6    6 AMBULANCE   OUT_OF_SERVICE 8 Hill Village                    0          0        -
+[test] full report written to build/test_data/report.txt
+  FAIL tests/test_report.c:418: contains(text, "SYSTEM STATISTICS (simulated clock = 22)\n")
+  FAIL tests/test_report.c:419: contains(text, "  by status: PENDING 0 DISPATCHED 4 COMPLETED 2 CANCELLED 1\n")
+  FAIL tests/test_report.c:420: contains(text, "  failed dispatch attempts: 4\n")
+  FAIL tests/test_report.c:421: contains(text, "Queue: 1 heap entries (0 live, 1 cancelled awaiting lazy removal)\n")
+  FAIL tests/test_report.c:422: contains(text, "  by status: AVAILABLE 1 DISPATCHED 4 OUT_OF_SERVICE 1\n")
+  FAIL tests/test_report.c:423: contains(text, "Allocations: 6 (active 4, completed 2)\n")
+  FAIL tests/test_report.c:424: contains(text, "  distance: total 21, average 3.50, min 0, max 15\n")
+  FAIL tests/test_report.c:425: contains(text, "  wait (reported -> dispatched): average 6.83 ticks over 6\n")
+  FAIL tests/test_report.c:426: contains(text, "  service (dispatched -> completed): average 4.00 ticks over 2\n")
+  FAIL tests/test_report.c:427: contains(text, "    5 Critical    2 dispatched, average wait 5.00\n")
+  FAIL tests/test_report.c:428: contains(text, "    3 Serious     1 dispatched, average wait 15.00\n")
+  FAIL tests/test_report.c:429: contains(text, "    2 Moderate    0 dispatched, average wait -\n")
+  FAIL tests/test_report.c:430: contains(text, "Cross-check: all counters agree\n")
+  FAIL tests/test_report.c:431: contains(text, "#1 COMPLETED: incident 1002 FIRE (severity 5) at 2 Fire Station North\n")
+  FAIL tests/test_report.c:432: contains(text, "    unit 3 FIRE_UNIT from 2 Fire Station North, distance 0, " "sent at 13, done at 18, waited 6\n")
+  FAIL tests/test_report.c:434: contains(text, "    route: 6 Airport Road > 7 University > 4 Industrial Zone > " "2 Fire Station North > 1 City Square\n")
+  FAIL tests/test_report.c:436: contains(text, "#6 ACTIVE: incident 1001 MEDICAL (severity 3) at 5 Old Town\n")
+  FAIL tests/test_report.c:437: contains(text, "    unit 2 AMBULANCE from 1 City Square, distance 6, sent at 21, waited 15\n")
+
+154 checks, 18 failed -> FAILURES
+===== build/test_input.exe =====
+[test] input_parse_int
+[test] input_read_line: endings, last line, end of input
+[test] input_read_line: the longest accepted line and longer ones
+[test] input_read_int re-prompts until a valid number
+[test] echo mode prints each answer
+[test] input_read_yes_no
+
+73 checks, 0 failed -> ALL PASSED
+===== build/test_menu.exe =====
+/bin/sh: line 4: ./build/test_menu.exe: Permission denied
+===== build/test_evaluation.exe =====
+/bin/sh: line 4: ./build/test_evaluation.exe: Permission denied
+make: *** [Makefile:163: test] Error 1
