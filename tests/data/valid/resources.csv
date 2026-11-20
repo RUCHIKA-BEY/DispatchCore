@@ -1,0 +1,7 @@
+resource_id,type,location_id,status,assigned_incident_id,total_dispatches,total_distance
+1,AMBULANCE,0,DISPATCHED,1001,1,9
+2,AMBULANCE,1,AVAILABLE,-1,1,15
+3,FIRE_UNIT,2,AVAILABLE,-1,0,0
+4,RESCUE_UNIT,4,AVAILABLE,-1,0,0
+5,FIRE_UNIT,7,AVAILABLE,-1,0,0
+6,AMBULANCE,8,AVAILABLE,-1,0,0

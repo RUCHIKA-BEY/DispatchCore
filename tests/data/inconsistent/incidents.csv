@@ -1,0 +1,2 @@
+incident_id,type,location_id,severity,reported_seq,status,assigned_resource_id,dispatch_attempts
+1001,MEDICAL,5,4,0,DISPATCHED,1,0

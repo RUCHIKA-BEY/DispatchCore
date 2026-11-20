@@ -1,0 +1,3 @@
+allocation_id,incident_id,resource_id,from_location,to_location,distance,route,status,dispatch_seq,complete_seq
+1,1004,2,6,1,15,6|7|4|2|1,COMPLETED,10,12
+2,1001,1,0,5,9,0|3|5,ACTIVE,11,-1

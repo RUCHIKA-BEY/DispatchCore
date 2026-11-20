@@ -1,0 +1,5 @@
+incident_id,type,location_id,severity,reported_seq,status,assigned_resource_id,dispatch_attempts
+1001,MEDICAL,5,4,6,DISPATCHED,1,0
+1002,FIRE,2,5,7,PENDING,-1,0
+1003,MEDICAL,0,2,8,CANCELLED,-1,0
+1004,ROAD_ACCIDENT,1,3,9,COMPLETED,2,1
