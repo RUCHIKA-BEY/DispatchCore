@@ -1,0 +1,12 @@
+# build output
+build/
+*.o
+*.exe
+dispatchcore
+
+# temporary files written by the safe-save routine (Phase 7)
+data/*.tmp
+data/*.bak
+
+# report written by menu option 23 (Phase 9)
+data/report.txt

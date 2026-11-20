@@ -1,0 +1,4 @@
+# Test fixture files must keep their exact bytes (CRLF line endings, a
+# byte-order mark, an over-long line). "-text" stops Git from converting
+# line endings in these files on checkout or commit.
+tests/data/** -text
