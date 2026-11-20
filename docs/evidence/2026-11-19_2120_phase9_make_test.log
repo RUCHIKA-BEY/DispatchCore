@@ -1,0 +1,31 @@
+===== build/test_graph.exe =====
+/bin/sh: line 4: ./build/test_graph.exe: Permission denied
+===== build/test_minheap.exe =====
+/bin/sh: line 4: ./build/test_minheap.exe: Permission denied
+===== build/test_dijkstra.exe =====
+/bin/sh: line 4: ./build/test_dijkstra.exe: Permission denied
+===== build/test_incident.exe =====
+/bin/sh: line 4: ./build/test_incident.exe: Permission denied
+===== build/test_incident_heap.exe =====
+/bin/sh: line 4: ./build/test_incident_heap.exe: Permission denied
+===== build/test_resource.exe =====
+/bin/sh: line 4: ./build/test_resource.exe: Permission denied
+===== build/test_compatibility.exe =====
+/bin/sh: line 4: ./build/test_compatibility.exe: Permission denied
+===== build/test_hash_table.exe =====
+/bin/sh: line 4: ./build/test_hash_table.exe: Permission denied
+===== build/test_app_state.exe =====
+/bin/sh: line 4: ./build/test_app_state.exe: Permission denied
+===== build/test_history.exe =====
+/bin/sh: line 4: ./build/test_history.exe: Permission denied
+===== build/test_dispatch.exe =====
+/bin/sh: line 4: ./build/test_dispatch.exe: Permission denied
+===== build/test_file_manager.exe =====
+/bin/sh: line 4: ./build/test_file_manager.exe: Permission denied
+===== build/test_report.exe =====
+/bin/sh: line 4: ./build/test_report.exe: Permission denied
+===== build/test_input.exe =====
+/bin/sh: line 4: ./build/test_input.exe: Permission denied
+===== build/test_menu.exe =====
+/bin/sh: line 4: ./build/test_menu.exe: Permission denied
+make: *** [Makefile:156: test] Error 1

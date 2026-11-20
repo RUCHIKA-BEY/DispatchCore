@@ -1,0 +1,11 @@
+sh tests/e2e/run_e2e.sh ./build/dispatchcore.exe
+===== e2e bad_input =====
+  NOT RUN: bad_input (program could not be started, exit 126)
+===== e2e day1 =====
+  NOT RUN: day1 (program could not be started, exit 126)
+===== e2e start-up failures =====
+  NOT RUN: missing data folder (program could not be started, exit 126)
+  NOT RUN: unknown argument (program could not be started, exit 126)
+
+0 e2e checks passed, 0 failed, 4 runs NOT RUN (blocked)
+make: *** [Makefile:171: e2e] Error 1

@@ -1,0 +1,44 @@
+sh tests/e2e/run_e2e.sh ./build/dispatchcore.exe
+===== e2e bad_input =====
+  FAIL: bad_input: exit status 0
+  FAIL: bad_input: line not found:   Please type a number.
+  FAIL: bad_input: line not found:   "abc" is not a whole number.
+  FAIL: bad_input: line not found:   "12abc" is not a whole number.
+  FAIL: bad_input: line not found:   Please type a number from 0 to 23.
+  FAIL: bad_input: line not found:   Please type a number from 1 to 100000000.
+  FAIL: bad_input: line not found: No incident with ID 5.
+  FAIL: bad_input: line not found: No unit with ID 77.
+  FAIL: bad_input: line not found: Goodbye.
+===== e2e day1 =====
+  FAIL: day1: exit status 0
+  FAIL: day1: line not found: Ready: 10 locations, 0 units, 0 incidents, 0 allocations. Autosave is OFF.
+  FAIL: day1: line not found: Registered unit 1: AMBULANCE at 0 Central Hospital. Status AVAILABLE.
+  FAIL: day1: line not found: Registered unit 2: FIRE_UNIT at 2 Fire Station North. Status AVAILABLE.
+  FAIL: day1: line not found: Registered incident 1001: MEDICAL, severity 4 (Severe), at 5 Old Town. Status PENDING.
+  FAIL: day1: line not found: Registered incident 1002: FIRE, severity 5 (Critical), at 4 Industrial Zone. Status PENDING.
+  FAIL: day1: line not found: Dispatched unit 2 (FIRE_UNIT) to incident 1002 (FIRE, severity 5 Critical) at 4 Industrial Zone
+  FAIL: day1: line not found:   distance 5, route: 2 Fire Station North > 4 Industrial Zone
+  FAIL: day1: line not found: Dispatched unit 1 (AMBULANCE) to incident 1001 (MEDICAL, severity 4 Severe) at 5 Old Town
+  FAIL: day1: line not found:   distance 9, route: 0 Central Hospital > 3 Riverside > 5 Old Town
+  FAIL: day1: line not found: No pending incidents.
+  FAIL: day1: line not found: Incident 1002 completed. Unit 2 is available again at 4 Industrial Zone.
+  FAIL: day1: line not found: Incident 1001 is DISPATCHED; only PENDING incidents can be cancelled.
+  FAIL: day1: line not found: Unit 2 is now OUT_OF_SERVICE.
+  FAIL: day1: line not found: #2 ACTIVE: incident 1001 MEDICAL (severity 4) at 5 Old Town
+  FAIL: day1: line not found: Road network: 10 locations, 11 roads
+  FAIL: day1: line not found: The city has 2 separate groups of locations; no road joins them.
+  FAIL: day1: line not found: No road connects 0 Central Hospital and 9 Lake Camp.
+  FAIL: day1: line not found: Shortest distance 16. Route: 0 Central Hospital > 1 City Square > 2 Fire Station North > 4 Industrial Zone > 7 University
+  FAIL: day1: line not found: Allocations: 2 (active 1, completed 1)
+  FAIL: day1: line not found: Cross-check: all counters agree
+  FAIL: day1: line not found:   "abc" is not a whole number.
+  FAIL: day1: line not found:   Please type a number from 0 to 23.
+  FAIL: day1: line not found: Autosave is off: unsaved changes are discarded.
+  FAIL: day1: line not found: Goodbye.
+===== e2e start-up failures =====
+  FAIL: missing data folder: exit status 1
+  FAIL: missing data folder: message
+  FAIL: unknown argument: exit status 2
+
+0 e2e checks passed, 37 failed
+make: *** [Makefile:171: e2e] Error 1

@@ -1,0 +1,24 @@
+Ready: 10 locations, 0 units, 0 incidents, 0 allocations. Autosave is OFF.
+Registered unit 1: AMBULANCE at 0 Central Hospital. Status AVAILABLE.
+Registered unit 2: FIRE_UNIT at 2 Fire Station North. Status AVAILABLE.
+Registered incident 1001: MEDICAL, severity 4 (Severe), at 5 Old Town. Status PENDING.
+Registered incident 1002: FIRE, severity 5 (Critical), at 4 Industrial Zone. Status PENDING.
+Dispatched unit 2 (FIRE_UNIT) to incident 1002 (FIRE, severity 5 Critical) at 4 Industrial Zone
+  distance 5, route: 2 Fire Station North > 4 Industrial Zone
+Dispatched unit 1 (AMBULANCE) to incident 1001 (MEDICAL, severity 4 Severe) at 5 Old Town
+  distance 9, route: 0 Central Hospital > 3 Riverside > 5 Old Town
+No pending incidents.
+Incident 1002 completed. Unit 2 is available again at 4 Industrial Zone.
+Incident 1001 is DISPATCHED; only PENDING incidents can be cancelled.
+Unit 2 is now OUT_OF_SERVICE.
+#2 ACTIVE: incident 1001 MEDICAL (severity 4) at 5 Old Town
+Road network: 10 locations, 11 roads
+The city has 2 separate groups of locations; no road joins them.
+No road connects 0 Central Hospital and 9 Lake Camp.
+Shortest distance 16. Route: 0 Central Hospital > 1 City Square > 2 Fire Station North > 4 Industrial Zone > 7 University
+Allocations: 2 (active 1, completed 1)
+Cross-check: all counters agree
+  "abc" is not a whole number.
+  Please type a number from 0 to 23.
+Autosave is off: unsaved changes are discarded.
+Goodbye.
