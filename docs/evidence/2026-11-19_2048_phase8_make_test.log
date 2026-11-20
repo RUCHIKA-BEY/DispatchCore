@@ -1,0 +1,117 @@
+===== build/test_graph.exe =====
+/bin/sh: line 4: ./build/test_graph.exe: Permission denied
+===== build/test_minheap.exe =====
+/bin/sh: line 4: ./build/test_minheap.exe: Permission denied
+===== build/test_dijkstra.exe =====
+/bin/sh: line 4: ./build/test_dijkstra.exe: Permission denied
+===== build/test_incident.exe =====
+[test] type/status names round-trip
+[test] incident_validate
+[test] incident_create
+[test] incident_higher_priority
+[test] status transition table
+[test] incident store: ownership, duplicates, growth
+
+ID     TYPE               LOCATION                   SEVERITY        SEQ  STATUS     RESOURCE
+1000   FIRE               2                          5 Critical        0  PENDING    -
+1001   ROAD_ACCIDENT      1                          2 Moderate        1  PENDING    -
+1002   FIRE               2                          3 Serious         2  PENDING    -
+1003   STRUCTURAL_RESCUE  3                          4 Severe          3  PENDING    -
+1004   MEDICAL            4                          5 Critical        4  PENDING    -
+1005   ROAD_ACCIDENT      5                          1 Minor           5  PENDING    -
+1006   FIRE               6                          2 Moderate        6  PENDING    -
+1007   STRUCTURAL_RESCUE  7                          3 Serious         7  PENDING    -
+1008   MEDICAL            8                          4 Severe          8  PENDING    -
+1009   ROAD_ACCIDENT      9                          5 Critical        9  PENDING    -
+1010   FIRE               0                          1 Minor          10  PENDING    -
+1011   STRUCTURAL_RESCUE  1                          2 Moderate       11  PENDING    -
+1012   MEDICAL            2                          3 Serious        12  PENDING    -
+1013   ROAD_ACCIDENT      3                          4 Severe         13  PENDING    -
+1014   FIRE               4                          5 Critical       14  PENDING    -
+1015   STRUCTURAL_RESCUE  5                          1 Minor          15  PENDING    -
+1016   MEDICAL            6                          2 Moderate       16  PENDING    -
+1017   ROAD_ACCIDENT      7                          3 Serious        17  PENDING    -
+1018   FIRE               8                          4 Severe         18  PENDING    -
+1019   STRUCTURAL_RESCUE  9                          5 Critical       19  PENDING    -
+1020   MEDICAL            0                          1 Minor          20  PENDING    -
+1021   ROAD_ACCIDENT      1                          2 Moderate       21  PENDING    -
+1022   FIRE               2                          3 Serious        22  PENDING    -
+1023   STRUCTURAL_RESCUE  3                          4 Severe         23  PENDING    -
+1024   MEDICAL            4                          5 Critical       24  PENDING    -
+1025   ROAD_ACCIDENT      5                          1 Minor          25  PENDING    -
+1026   FIRE               6                          2 Moderate       26  PENDING    -
+1027   STRUCTURAL_RESCUE  7                          3 Serious        27  PENDING    -
+1028   MEDICAL            8                          4 Severe         28  PENDING    -
+1029   ROAD_ACCIDENT      9                          5 Critical       29  PENDING    -
+1030   FIRE               0                          1 Minor          30  PENDING    -
+1031   STRUCTURAL_RESCUE  1                          2 Moderate       31  PENDING    -
+1032   MEDICAL            2                          3 Serious        32  PENDING    -
+1033   ROAD_ACCIDENT      3                          4 Severe         33  PENDING    -
+1034   FIRE               4                          5 Critical       34  PENDING    -
+1035   STRUCTURAL_RESCUE  5                          1 Minor          35  PENDING    -
+1036   MEDICAL            6                          2 Moderate       36  PENDING    -
+1037   ROAD_ACCIDENT      7                          3 Serious        37  PENDING    -
+1038   FIRE               8                          4 Severe         38  PENDING    -
+1039   STRUCTURAL_RESCUE  9                          5 Critical       39  PENDING    -
+1040   MEDICAL            0                          1 Minor          40  PENDING    -
+1041   ROAD_ACCIDENT      1                          2 Moderate       41  PENDING    -
+1042   FIRE               2                          3 Serious        42  PENDING    -
+1043   STRUCTURAL_RESCUE  3                          4 Severe         43  PENDING    -
+1044   MEDICAL            4                          5 Critical       44  PENDING    -
+1045   ROAD_ACCIDENT      5                          1 Minor          45  PENDING    -
+1046   FIRE               6                          2 Moderate       46  PENDING    -
+1047   STRUCTURAL_RESCUE  7                          3 Serious        47  PENDING    -
+1048   MEDICAL            8                          4 Severe         48  PENDING    -
+1049   ROAD_ACCIDENT      9                          5 Critical       49  PENDING    -
+
+
+89 checks, 0 failed -> ALL PASSED
+===== build/test_incident_heap.exe =====
+/bin/sh: line 4: ./build/test_incident_heap.exe: Permission denied
+===== build/test_resource.exe =====
+[test] type/status names round-trip
+[test] resource_validate / resource_create
+[test] status transition table
+[test] assign / release: no double assignment, statistics, relocation
+[test] out of service / return to service
+[test] 5000 random operations never break the invariant
+[test] resource store: order, duplicates, counts
+
+ID    TYPE         LOCATION                   STATUS          INCIDENT   TRIPS   DISTANCE
+7     AMBULANCE    0                          AVAILABLE       -              0          0
+2     FIRE_UNIT    1                          AVAILABLE       -              0          0
+9     RESCUE_UNIT  2                          DISPATCHED      1001           1          3
+4     AMBULANCE    3                          OUT_OF_SERVICE  -              0          0
+
+ID    TYPE         LOCATION                   STATUS          INCIDENT   TRIPS   DISTANCE
+7     AMBULANCE    0                          AVAILABLE       -              0          0
+2     FIRE_UNIT    1                          AVAILABLE       -              0          0
+
+
+98 checks, 0 failed -> ALL PASSED
+===== build/test_compatibility.exe =====
+/bin/sh: line 4: ./build/test_compatibility.exe: Permission denied
+===== build/test_hash_table.exe =====
+[test] creation and the hash function
+[test] insert, find, duplicate, remove
+[test] forced collisions: keys 1, 6, 11, 16 in a 5-bucket table
+
+  bucket   1: -> 16 -> 11 -> 6 -> 1
+  4 keys in 5 buckets (1 used), load factor 0.80, longest chain 4
+[test] why the bucket count should be prime
+  10 buckets: used 1, longest chain 50
+  11 buckets: used 11, longest chain 5
+[test] 10000 keys; random operations compared with a simple array
+
+67 checks, 0 failed -> ALL PASSED
+===== build/test_app_state.exe =====
+/bin/sh: line 4: ./build/test_app_state.exe: Permission denied
+===== build/test_history.exe =====
+/bin/sh: line 4: ./build/test_history.exe: Permission denied
+===== build/test_dispatch.exe =====
+/bin/sh: line 4: ./build/test_dispatch.exe: Permission denied
+===== build/test_file_manager.exe =====
+/bin/sh: line 4: ./build/test_file_manager.exe: Permission denied
+===== build/test_report.exe =====
+/bin/sh: line 4: ./build/test_report.exe: Permission denied
+make: *** [Makefile:131: test] Error 1
